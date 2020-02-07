@@ -24,7 +24,7 @@ function Tweet({ tweet }) {
 
 function Avatar({ hash }) {
   const url = `https://www.gravatar.com/avatar/${hash}`;
-  return <img src="{url}" className="avatar" alt="avatar" />;
+  return <img src={url} className="avatar" alt="avatar" />;
 }
 
 function Message({ text }) {
@@ -73,7 +73,7 @@ const MoreOptionsButton = () => <i className="fa fa-ellipsis-h more-options-butt
 
 const testTweet = {
   message: 'Something about cats.',
-  gravatar: 'xyz',
+  gravatar: 'd47dd963d01952cb219ff5bc09a764c0',
   author: {
     handle: 'catperson',
     name: 'IAMA Cat Person',
