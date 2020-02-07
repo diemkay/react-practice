@@ -27,22 +27,6 @@ Tweet.propTypes = {
   tweet: PropTypes.object.isRequired,
 };
 
-// It’s also good to follow the DRY (Don’t Repeat Yourself) principle. If you have an explicit object shape required in one place, for instance in Author, there’s little value in duplicating the shape in the parent Tweet component. If the shape of author changes some day, there will be two places to update code. Having that second check doesn’t buy you anything, and instead, could actually cost you time in the future.
-
-// Tweet.propTypes = {
-//   tweet: PropTypes.shape({
-//     message: PropTypes.string,
-//     gravatar: PropTypes.string,
-//     author: PropTypes.shape({
-//       handle: PropTypes.string.isRequired,
-//       name: PropTypes.string.isRequired,
-//     }).isRequired,
-//     likes: PropTypes.number,
-//     retweets: PropTypes.number,
-//     timestamp: PropTypes.string,
-//   }).isRequired,
-// };
-
 function Avatar({ hash }) {
   const url = `https://www.gravatar.com/avatar/${hash}`;
   return <img src={url} className="avatar" alt="avatar" />;
