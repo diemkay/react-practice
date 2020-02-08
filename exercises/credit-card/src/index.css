@@ -1,0 +1,78 @@
+/* Some random font for the logo */
+@import url('https://fonts.googleapis.com/css?family=Exo:900&display=swap');
+
+.credit-card {
+  width: 480px;
+  height: 260px;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: white;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+/* CONTENTS */
+
+.bank-name {
+  align-self: flex-end;
+  font-family: 'Exo', sans-serif;
+  font-size: 1.7em;
+  flex-basis: 30%;
+}
+
+/* MONOSPACE ALL THE THINGS */
+
+.card-number,
+.cardholder-name,
+.expiry-date {
+  font-family: monospace;
+  padding: 5px 2px;
+}
+
+/* CARD NUMBER AND PIN */
+
+.card-number {
+  position: relative;
+  font-size: 1.7em;
+}
+.pin-number {
+  position: absolute;
+  bottom: -12px;
+  font-size: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* EXPIRY DATE GROUP */
+
+.expiry-date {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.valid-thru {
+  font-size: 8px;
+  text-transform: uppercase;
+  padding: 4px;
+  justify-self: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* CARDHOLDER */
+
+.cardholder-name {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
