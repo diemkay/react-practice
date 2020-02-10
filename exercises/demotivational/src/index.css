@@ -1,0 +1,36 @@
+.frame {
+  width: 800px;
+  height: 600px;
+  background-color: black;
+  color: whitesmoke;
+  border: 1px solid cyan;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.image {
+  max-width: 500px;
+  max-height: 380px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.big-word {
+  font-size: 72px;
+  text-align: center;
+  font-variant-caps: small-caps;
+}
+
+.tagline {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+  font-size: 28px;
+  text-align: center;
+  font-variant: small-caps;
+}
