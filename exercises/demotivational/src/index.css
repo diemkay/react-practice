@@ -1,9 +1,13 @@
+:root {
+  --main-color: cyan;
+}
+
 .frame {
   width: 800px;
   height: 600px;
   background-color: black;
   color: whitesmoke;
-  border: 1px solid cyan;
+  border: 1px solid var(--main-color);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -18,19 +22,23 @@
   max-height: 380px;
   justify-content: center;
   flex-grow: 1;
+  border: 1px solid var(--main-color);
+  padding: 30px;
 }
 
 .big-word {
-  font-size: 72px;
+  font-size: 92px;
   text-align: center;
   font-variant-caps: small-caps;
+  text-decoration: underline;
+  text-decoration-color: var(--main-color);
 }
 
 .tagline {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: whitesmoke;
-  font-size: 28px;
+  font-size: 22px;
   text-align: center;
   font-variant: small-caps;
 }
