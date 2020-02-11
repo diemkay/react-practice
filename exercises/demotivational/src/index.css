@@ -7,7 +7,6 @@
   height: 600px;
   background-color: black;
   color: whitesmoke;
-  border: 1px solid var(--main-color);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -17,12 +16,16 @@
   padding: 20px;
 }
 
-.image {
-  max-width: 500px;
-  max-height: 380px;
-  justify-content: center;
-  flex-grow: 1;
+.image-frame {
+  display: flex;
   border: 1px solid var(--main-color);
+  width: 500px;
+  justify-content: center;
+}
+
+.image {
+  max-width: 400px;
+  max-height: 280px;
   padding: 30px;
 }
 

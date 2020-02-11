@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import logo from './logo512.png';
 
 const Poster = () => {
   return (
@@ -14,7 +15,9 @@ const Poster = () => {
 
 const Image = () => {
   return (
-    <img className="image" src="https://picsum.photos/500/380" alt="iets random"></img>
+    <div className="image-frame">
+      <img className="image" src={logo} alt="react"></img>
+    </div>
   );
 };
 
