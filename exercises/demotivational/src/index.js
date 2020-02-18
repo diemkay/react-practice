@@ -3,12 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import logo from './logo512.png';
 
-const Poster = () => {
+const DemotivateYourself = () => {
+  return (
+    <Poster
+      word="React"
+      phrase="If You Can't Learn to Do it Well, At Least Learn to Enjoy Doing it Badly"
+    />
+  );
+};
+
+const Poster = ({ word, phrase }) => {
   return (
     <div className="frame">
       <Image />
-      <BigWord word="React" />
-      <Tagline phrase="If You Can't Learn to Do it Well, At Least Learn to Enjoy Doing it Badly" />
+      <BigWord word={word} />
+      <Tagline phrase={phrase} />
     </div>
   );
 };
@@ -21,8 +30,21 @@ const Image = () => {
   );
 };
 
-const BigWord = ({ word }) => <div className="big-word">{word}</div>;
+const BigWord = ({ word }) => {
+  const smallWorld = word.toUpperCase();
+  const firstLetter = smallWorld.charAt(0);
+  const lastLetter = smallWorld.charAt(smallWorld.length - 1);
+  const middle = smallWorld.slice(1, -1);
+
+  return (
+    <div className="big-word">
+      <span className="border-letter">{firstLetter}</span>
+      <span className="word-middle">{middle}</span>
+      <span className="border-letter">{lastLetter}</span>
+    </div>
+  );
+};
 
 const Tagline = ({ phrase }) => <div className="tagline">{phrase}</div>;
 
-ReactDOM.render(<Poster />, document.getElementById('root'));
+ReactDOM.render(<DemotivateYourself />, document.getElementById('root'));
