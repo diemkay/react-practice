@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './style.css';
 
-const App = () => (
-  <div>
+const ErrorBox = () => (
+  <div className="alert-danger">
     <h1>Hello world</h1>
   </div>
 );
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<ErrorBox />, document.getElementById('root'));
