@@ -1,8 +1,14 @@
 .alert-danger {
-  border: 1px solid crimson;
-  width: 300px;
+  width: 400px;
 }
 
-h1 {
-  color: crimson;
+body {
+  padding: 20px;
+}
+
+.head {
+  color: palevioletred;
+}
+.tail {
+  color: purple;
 }
